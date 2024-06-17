@@ -5,7 +5,7 @@ import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { signIn } from '@/auth';
-import { AuthError } from 'next-auth'
+import { AuthError } from 'next-auth';
 
 const FormSchema = z.object({
     id: z.string(),
@@ -41,8 +41,9 @@ export async function authenticate(
     await signIn('credentials', formData);
   } catch (error) {
     if (error instanceof AuthError) {
+      console.log(error.type)
       switch (error.type) {
-        case 'CredentialsSignin':
+        case 'CallbackRouteError':
           return 'Invalid credentials.';
         default:
           return 'Something went wrong.';

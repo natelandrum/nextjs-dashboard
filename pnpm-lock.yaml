@@ -18,7 +18,7 @@ importers:
         specifier: 20.5.7
         version: 20.5.7
       '@vercel/postgres':
-        specifier: ^0.5.1
+        specifier: ^0.5.0
         version: 0.5.1
       autoprefixer:
         specifier: 10.4.15
@@ -33,7 +33,7 @@ importers:
         specifier: 15.0.0-rc.0
         version: 15.0.0-rc.0(@babel/core@7.24.6)(react-dom@19.0.0-rc-6230622a1a-20240610(react@19.0.0-rc-6230622a1a-20240610))(react@19.0.0-rc-6230622a1a-20240610)
       next-auth:
-        specifier: 5.0.0-beta.19
+        specifier: ^5.0.0-beta.4
         version: 5.0.0-beta.19(next@15.0.0-rc.0(@babel/core@7.24.6)(react-dom@19.0.0-rc-6230622a1a-20240610(react@19.0.0-rc-6230622a1a-20240610))(react@19.0.0-rc-6230622a1a-20240610))(react@19.0.0-rc-6230622a1a-20240610)
       postcss:
         specifier: 8.4.31
@@ -51,8 +51,8 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
       use-debounce:
-        specifier: ^10.0.1
-        version: 10.0.1(react@19.0.0-rc-6230622a1a-20240610)
+        specifier: ^9.0.4
+        version: 9.0.4(react@19.0.0-rc-6230622a1a-20240610)
       zod:
         specifier: ^3.22.2
         version: 3.23.8
@@ -2506,9 +2506,9 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
-  use-debounce@10.0.1:
-    resolution: {integrity: sha512-0uUXjOfm44e6z4LZ/woZvkM8FwV1wiuoB6xnrrOmeAEjRDDzTLQNRFtYHvqUsJdrz1X37j0rVGIVp144GLHGKg==}
-    engines: {node: '>= 16.0.0'}
+  use-debounce@9.0.4:
+    resolution: {integrity: sha512-6X8H/mikbrt0XE8e+JXRtZ8yYVvKkdYRfmIhWZYsP8rcNs9hk3APV8Ua2mFkKRLcJKVdnX2/Vwrmg2GWKUQEaQ==}
+    engines: {node: '>= 10.0.0'}
     peerDependencies:
       react: '>=16.8.0'
 
@@ -5296,7 +5296,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  use-debounce@10.0.1(react@19.0.0-rc-6230622a1a-20240610):
+  use-debounce@9.0.4(react@19.0.0-rc-6230622a1a-20240610):
     dependencies:
       react: 19.0.0-rc-6230622a1a-20240610
 
