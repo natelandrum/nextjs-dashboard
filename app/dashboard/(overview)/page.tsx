@@ -8,7 +8,8 @@ import { RevenueChartSkeleton,
         LatestInvoicesSkeleton,
         CardSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
- 
+
+// Without Auth for W02 Assignment
 export default async function Page() {
   const { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers } = await fetchCardData();
   return (
